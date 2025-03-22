@@ -1,0 +1,119 @@
+.culturalShowcase {
+  @apply container-custom section-padding;
+}
+
+.culturalShowcase h2 {
+  @apply heading-secondary text-center mb-12;
+}
+
+/* Region Selector Styles */
+.regionSelector {
+  @apply flex flex-wrap justify-center gap-4 mb-12;
+}
+
+.regionButton {
+  @apply flex items-center gap-2 px-6 py-3 rounded-full 
+    bg-white border border-gray-200 text-gray-700
+    hover:border-terracotta hover:text-terracotta
+    transition-all duration-300;
+}
+
+.regionButton.active {
+  @apply bg-terracotta text-white border-terracotta;
+}
+
+.regionIcon {
+  @apply text-xl;
+}
+
+/* Carousel Styles */
+.carousel {
+  @apply relative max-w-4xl mx-auto;
+}
+
+.slide {
+  @apply relative bg-white rounded-xl shadow-lg overflow-hidden;
+}
+
+.dishImage {
+  @apply w-full h-[300px] object-cover;
+}
+
+.dishInfo {
+  @apply p-6 bg-white;
+}
+
+.dishInfo h3 {
+  @apply heading-tertiary mb-2;
+}
+
+.dishInfo p {
+  @apply paragraph text-gray-600;
+}
+
+/* Navigation Controls */
+.navigation {
+  @apply flex justify-between absolute top-1/2 left-0 right-0 -translate-y-1/2 px-4;
+}
+
+.navButton {
+  @apply w-10 h-10 flex items-center justify-center 
+    rounded-full bg-white/80 backdrop-blur-sm
+    text-gray-700 shadow-md
+    hover:bg-terracotta hover:text-white
+    transition-all duration-300;
+}
+
+/* Dots Navigation */
+.dots {
+  @apply flex justify-center gap-2 mt-6;
+}
+
+.dot {
+  @apply w-3 h-3 rounded-full bg-gray-300
+    hover:bg-gray-400 transition-all duration-300;
+}
+
+.dot.activeDot {
+  @apply bg-terracotta;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .regionSelector {
+    @apply gap-2;
+  }
+
+  .regionButton {
+    @apply px-4 py-2 text-sm;
+  }
+
+  .dishImage {
+    @apply h-[200px];
+  }
+
+  .navigation {
+    @apply px-2;
+  }
+
+  .navButton {
+    @apply w-8 h-8;
+  }
+}
+
+/* Animation Classes */
+.slideEnter {
+  @apply opacity-0 translate-x-full;
+}
+
+.slideEnterActive {
+  @apply opacity-100 translate-x-0 transition-all duration-500;
+}
+
+.slideExit {
+  @apply opacity-100 translate-x-0;
+}
+
+.slideExitActive {
+  @apply opacity-0 -translate-x-full transition-all duration-500;
+}
