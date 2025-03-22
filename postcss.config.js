@@ -5,6 +5,7 @@ module.exports = {
     "postcss-import": {
       path: [path.resolve(__dirname, "src")],
     },
+    "tailwindcss/nesting": {},
     tailwindcss: {
       config: path.resolve(__dirname, "tailwind.config.js"),
     },
