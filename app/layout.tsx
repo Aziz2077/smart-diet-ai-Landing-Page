@@ -29,9 +29,14 @@ const amazigh = localFont({
 
 export const metadata: Metadata = {
   title: "Authentic Algerian Meals - Curated Daily by AI",
+
   description:
     "Get personalized Algerian meal plans tailored to your taste, dietary needs, and local ingredients – no more meal planning stress!",
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

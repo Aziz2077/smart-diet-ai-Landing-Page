@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["images.unsplash.com"],
     formats: ["image/avif", "image/webp"],
   },
   webpack(config) {
@@ -16,3 +15,17 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+/* If you want to add remote images later, use remotePatterns instead of deprecated domains
+images: {
+  remotePatterns: [
+    {
+      protocol: 'https',
+      hostname: 'images.unsplash.com',
+      port: '', // No custom port
+      pathname: '/**', // Allow all paths
+    },
+  ],
+  formats: ["image/avif", "image/webp"],
+},
+*/
