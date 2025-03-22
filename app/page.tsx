@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "../components/Hero/Hero";
 import ProblemSolution from "../components/ProblemSolution/ProblemSolution";
 import AIDemo from "../components/AIDemo/AIDemo";

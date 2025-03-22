@@ -52,3 +52,42 @@ app/
 │   └── globals.css
 ├── tailwind.config.js
 └── next.config.js
+
+-------------------------------------------------------------------------------------------------------------------
+
+.
+├── app/
+│   ├── fonts/
+│   │   ├── Amazigh-Regular.woff2
+│   │   └── Amazigh-Bold.woff2
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   ├── Hero/
+│   ├── ProblemSolution/
+│   ├── AIDemo/
+│   ├── CulturalShowcase/
+│   ├── SocialProof/
+│   ├── HowItWorks/
+│   ├── Pricing/
+│   ├── FAQ/
+│   ├── Footer/
+│   └── ui/
+├── lib/
+│   ├── theme.ts
+│   └── animations.ts
+├── public/
+│   └── images/
+│       ├── patterns/
+│       ├── dishes/
+│       └── icons/
+├── types/
+│   ├── meal.ts
+│   └── region.ts
+├── .gitignore
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── tsconfig.json
