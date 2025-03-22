@@ -1,0 +1,157 @@
+.problemCard {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.problemCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.iconWrapper {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.solutionCard {
+  border-left: 3px solid #E2725B;
+  padding-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.solutionCard:hover {
+  background-color: rgba(226, 114, 91, 0.05);
+  transform: translateX(5px);
+}
+
+.solutionIcon {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+/* AI Algorithm Graphic Styles */
+.algorithmGraphic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.algorithmGraphic::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #FFD700, #E2725B);
+  z-index: 0;
+}
+
+.inputsNode, .processingNode, .outputNode {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.inputsNode:hover, .processingNode:hover, .outputNode:hover {
+  transform: translateY(-5px);
+}
+
+.inputsNode {
+  border-top: 3px solid #6B8E23;
+}
+
+.processingNode {
+  border-top: 3px solid #FFD700;
+}
+
+.outputNode {
+  border-top: 3px solid #E2725B;
+}
+
+.inputsNode h5, .outputNode h5 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-cairo);
+}
+
+.inputsNode ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.inputsNode ul li {
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.outputNode p {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Processing animation */
+.processingAnimation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FFD700;
+  margin: 0 2px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.circle:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .algorithmGraphic {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .algorithmGraphic::before {
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background: linear-gradient(to bottom, #FFD700, #E2725B);
+  }
+  
+  .inputsNode, .processingNode, .outputNode {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
