@@ -11,11 +11,11 @@
 }
 
 .title {
-  @apply heading-primary mb-6;
+  @apply font-amazigh text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6;
 }
 
 .subtitle {
-  @apply paragraph mb-8;
+  @apply font-cairo text-base md:text-lg text-gray-700 leading-relaxed mb-8;
 }
 
 .ctaButton {
@@ -28,7 +28,6 @@
 
 .pattern {
   @apply absolute inset-0 opacity-10 pointer-events-none;
-  background-image: url('/images/patterns/algerian-pattern.webp');
+  background-image: url("/images/patterns/algerian-pattern.webp");
   background-repeat: repeat;
 }
-

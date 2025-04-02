@@ -48,7 +48,7 @@
 }
 
 .dishInfo p {
-  @apply paragraph text-gray-600;
+  @apply paragraph;
 }
 
 /* Navigation Controls */
