@@ -44,11 +44,11 @@
 }
 
 .dishInfo h3 {
-  @apply heading-tertiary mb-2;
+  @apply font-amazigh text-xl md:text-2xl font-bold text-gray-900 mb-2;
 }
 
 .dishInfo p {
-  @apply paragraph;
+  @apply font-cairo text-base md:text-lg text-gray-700 leading-relaxed;
 }
 
 /* Navigation Controls */
